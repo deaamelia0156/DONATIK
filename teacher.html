@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard Guru — DONATIK</title><link rel="stylesheet" href="teacher.css">
+</head>
+<body>
+<header><a href="index.html">🍩 DONATIK</a><span>Dashboard Guru</span></header>
+<main>
+  <section class="intro"><p class="eyebrow">RUANG PENGELOLAAN</p><h1>Dashboard Guru</h1><p>Kelola materi pelanggan dan lihat rekap nilai yang tersimpan di browser ini.</p></section>
+  <div class="tabs"><button class="tab active" data-tab="scores">📊 Rekap nilai</button><button class="tab" data-tab="questions">✏️ Kelola soal</button></div>
+  <section id="scores" class="tab-panel active">
+    <div class="section-head"><div><h2>Nilai siswa</h2><p>Nilai tersimpan secara lokal pada browser/perangkat ini.</p></div><button id="exportScores" class="btn">Unduh CSV</button></div>
+    <div class="table-wrap"><table><thead><tr><th>Nama</th><th>Tanggal</th><th>Skor</th><th>Pelanggan</th><th>Benar</th><th>Salah</th><th>Status</th></tr></thead><tbody id="scoreRows"></tbody></table></div>
+    <button id="clearScores" class="danger">Hapus seluruh rekap</button>
+  </section>
+  <section id="questions" class="tab-panel">
+    <div class="section-head"><div><h2>Materi dan soal pelanggan</h2><p>Sepuluh data pelanggan digunakan dalam satu sesi permainan.</p></div><button id="resetContent" class="btn secondary">Pulihkan data awal</button></div>
+    <div class="editor-layout"><div id="customerList" class="customer-list"></div><form id="customerForm" class="editor-form">
+      <h3 id="formTitle">Pilih data pelanggan</h3>
+      <label>Nama pelanggan<input name="name" required></label>
+      <label>Emoji karakter<input name="avatar" required></label>
+      <label>Dialog kedatangan<textarea name="arrival" required></textarea></label>
+      <label>Dialog pengantar puisi<textarea name="poemIntro" required></textarea></label>
+      <label>Larik puisi<textarea name="line" required></textarea></label>
+      <label>Makna larik<textarea name="meaning" required></textarea></label>
+      <label>Pertanyaan<textarea name="question" required></textarea></label>
+      <label>Pilihan A<input name="option0" required></label><label>Pilihan B<input name="option1" required></label>
+      <label>Pilihan C<input name="option2" required></label><label>Pilihan D<input name="option3" required></label>
+      <label>Kunci jawaban<select name="answer"><option value="0">A</option><option value="1">B</option><option value="2">C</option><option value="3">D</option></select></label>
+      <label>Feedback jawaban benar<textarea name="correct" required></textarea></label>
+      <label>Feedback jawaban salah<textarea name="wrong" required></textarea></label>
+      <label>Dialog sebelum kuis<textarea name="before" required></textarea></label>
+      <label>Dialog setelah jawaban benar<textarea name="right" required></textarea></label>
+      <label>Topping pesanan<select name="topping"><option>Stroberi</option><option>Cokelat</option><option>Matcha</option><option>Vanila</option><option>Blueberry</option><option>Karamel</option></select></label>
+      <label>Dialog setelah topping<textarea name="after" required></textarea></label>
+      <label>Dialog perpisahan<textarea name="bye" required></textarea></label>
+      <div class="form-actions"><button class="btn" type="submit">Simpan perubahan</button><button class="danger" type="button" id="deleteCustomer">Hapus data</button></div>
+      <p id="saveMessage" class="message" aria-live="polite"></p>
+    </form></div>
+  </section>
+  <p class="warning">Catatan: dashboard prototipe ini belum memakai akun/login guru. Jangan gunakan untuk menyimpan nilai resmi atau data pribadi penting. Pada tahap Firebase, kita akan membuat login guru dan penyimpanan online yang terlindungi.</p>
+</main>
+<script src="teacher.js"></script>
+</body></html>

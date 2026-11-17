@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f3">
+  <title>DONATIK — Toko Donat Puisi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" data-page="home">🍩 DONATIK</a>
+    <nav>
+      <button class="nav-btn" data-page="menu">Menu</button>
+      <a class="nav-link" href="teacher.html">Dashboard Guru</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="page active hero">
+      <div class="hero-art" aria-hidden="true">
+        <div class="awning">🍩 TOKO DONATIK 🍩</div>
+        <div class="shop-window"><span>🍓</span><span>🍫</span><span>🍵</span><span>🫐</span></div>
+        <div class="donut-big">🍩</div>
+        <div class="counter">SELAMAT DATANG!</div>
+      </div>
+      <div class="hero-copy">
+        <p class="eyebrow">GAME PEMBELAJARAN BAHASA INDONESIA • KELAS IX</p>
+        <h1>DONATIK</h1>
+        <h2>Puisi punya rasa, donat punya cerita!</h2>
+        <p class="intro">"Selamat datang di toko donatmu! Tapi hari ini aneh... pembeli nggak mau pesan biasa. Mereka cuma ngomong pakai puisi. Tugasmu: pahami maknanya, lalu pilihkan topping yang paling cocok!"</p>
+        <div class="actions">
+          <button class="primary" data-page="prepare">MULAI BERMAIN</button>
+          <button class="secondary" data-page="how">CARA BERMAIN</button>
+        </div>
+        <div class="actions small-actions">
+          <button class="text-btn" data-page="settings">⚙ Pengaturan</button>
+          <button class="text-btn" data-page="about">Tentang game</button>
+          <a class="text-btn" href="teacher.html">Dashboard guru ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="page panel">
+      <p class="eyebrow">MENU TOKO</p><h1>Siap melayani pelanggan?</h1>
+      <div class="menu-grid">
+        <button class="menu-card" data-page="prepare"><span>🎮</span><b>Mulai permainan</b><small>Layani 10 pelanggan</small></button>
+        <button class="menu-card" data-page="how"><span>📖</span><b>Cara bermain</b><small>Pelajari aturan permainan</small></button>
+        <button class="menu-card" data-page="lesson"><span>✍️</span><b>Materi puisi</b><small>Belajar memahami larik</small></button>
+        <button class="menu-card" data-page="settings"><span>⚙️</span><b>Pengaturan</b><small>Atur nama pemain dan suara</small></button>
+        <button class="menu-card" data-page="about"><span>🍩</span><b>Tentang game</b><small>Informasi DONATIK</small></button>
+      </div>
+      <button class="secondary" data-page="home">← Kembali ke halaman utama</button>
+    </section>
+
+    <section id="how" class="page panel">
+      <p class="eyebrow">PANDUAN PEMAIN</p><h1>Cara bermain DONATIK</h1>
+      <div class="guide-grid">
+        <article><span>👋</span><h3>1. Pilih pelanggan</h3><p>Pelanggan datang satu per satu. Klik pelanggan yang ingin kamu layani.</p></article>
+        <article><span>💬</span><h3>2. Baca dialog dan puisi</h3><p>Dengarkan permintaan pelanggan, lalu baca larik puisi dengan teliti.</p></article>
+        <article><span>🧠</span><h3>3. Jawab pertanyaan</h3><p>Pilih satu makna larik yang paling tepat. Jawaban salah mengurangi satu nyawa.</p></article>
+        <article><span>🍓</span><h3>4. Pilih topping pesanan</h3><p>Pelanggan menyebutkan topping yang diminta. Klik topping yang sama untuk menyelesaikan pesanan.</p></article>
+        <article><span>⏱️</span><h3>5. Atur waktu</h3><p>Kamu punya waktu 3 menit. Timer tetap berjalan saat membaca dialog dan menjawab soal.</p></article>
+        <article><span>❤️</span><h3>6. Jaga nyawa dan kesabaran</h3><p>Kamu punya 3 nyawa. Kesabaran semua pelanggan yang menunggu terus berkurang.</p></article>
+      </div>
+      <p class="notice">Target: layani seluruh 10 pelanggan sebelum waktu habis. Jika nyawa atau kesabaran pelanggan habis, permainan berakhir.</p>
+      <button class="secondary" data-page="menu">← Kembali ke menu</button>
+    </section>
+
+    <section id="lesson" class="page panel">
+      <p class="eyebrow">MATERI SINGKAT</p><h1>Memahami makna larik puisi</h1>
+      <div class="lesson-box">
+        <h3>Apa itu larik puisi?</h3><p>Larik adalah baris dalam sebuah puisi. Setiap larik dapat menyampaikan gagasan, perasaan, atau gambaran tertentu.</p>
+        <h3>Bagaimana memahami maknanya?</h3>
+        <ol><li>Baca larik secara utuh dan perlahan.</li><li>Perhatikan pilihan kata dan ungkapan kiasan.</li><li>Pikirkan suasana atau perasaan yang disampaikan.</li><li>Hubungkan dengan larik lain atau konteks puisinya.</li></ol>
+        <h3>Contoh</h3>
+        <blockquote>“Aku ingin mencintaimu dengan sederhana.”</blockquote>
+        <p>Maknanya adalah mengungkapkan kasih sayang dengan tulus, tidak berlebihan, dan tidak dibuat-buat.</p>
+      </div>
+      <button class="secondary" data-page="menu">← Kembali ke menu</button>
+    </section>
+
+    <section id="settings" class="page panel narrow">
+      <p class="eyebrow">PENGATURAN</p><h1>Siapkan permainan</h1>
+      <label for="playerName">Nama pemain</label>
+      <input id="playerName" maxlength="30" placeholder="Masukkan nama kamu">
+      <label class="check-label"><input type="checkbox" id="soundToggle" checked> Aktifkan efek suara sederhana</label>
+      <p class="muted">Pengaturan nama digunakan pada rekap nilai permainan.</p>
+      <button class="primary" data-page="menu">Simpan dan kembali</button>
+    </section>
+
+    <section id="prepare" class="page panel prepare">
+      <div class="prepare-donut">🍩</div><p class="eyebrow">TOKO DONATIK SIAP BUKA</p>
+      <h1>Sepuluh pelanggan menunggu!</h1>
+      <p>Waktu pelayananmu 3 menit. Baca setiap larik, jawab pertanyaannya, lalu siapkan topping yang diminta pelanggan.</p>
+      <ul><li>⏱️ Timer: 03:00</li><li>❤️ Nyawa: 3</li><li>👥 Pelanggan: 10 orang</li></ul>
+      <button id="startGame" class="primary">MULAI MELAYANI</button>
+      <button class="secondary" data-page="menu">Kembali ke menu</button>
+    </section>
+
+    <section id="game" class="page game-page">
+      <div class="game-hud">
+        <div><small>WAKTU</small><strong id="timer">03:00</strong></div>
+        <div><small>NYAWA</small><strong id="lives">❤️❤️❤️</strong></div>
+        <div><small>SKOR</small><strong id="score">0</strong></div>
+        <div><small>TERLAYANI</small><strong id="served">0/10</strong></div>
+      </div>
+      <div class="game-layout">
+        <section class="queue-panel">
+          <div class="section-heading"><h2>Antrean pelanggan</h2><span id="queueCount">0 menunggu</span></div>
+          <p class="muted tiny">Pilih pelanggan yang ingin kamu layani.</p>
+          <div id="customerQueue" class="customer-queue"></div>
+        </section>
+        <section class="service-panel">
+          <div class="counter-heading"><span>🍩 MEJA PELAYANAN</span><span id="phaseLabel">Pilih pelanggan</span></div>
+          <div id="serviceContent" class="service-content">
+            <div class="empty-service">👩‍🍳<h2>Siap menerima pesanan!</h2><p>Pilih salah satu pelanggan di antrean.</p></div>
+          </div>
+        </section>
+      </div>
+      <div id="gameMessage" class="game-message" aria-live="polite"></div>
+    </section>
+
+    <section id="result" class="page panel result-panel">
+      <div id="resultIcon" class="result-icon">🏆</div>
+      <p class="eyebrow">HASIL PERMAINAN</p><h1 id="resultTitle">TOKO HEBAT!</h1>
+      <p id="resultReason"></p>
+      <div class="result-stats" id="resultStats"></div>
+      <div class="evaluation" id="evaluation"></div>
+      <button class="primary" id="playAgain">MAIN LAGI</button>
+      <button class="secondary" data-page="menu">KEMBALI KE MENU</button>
+    </section>
+
+    <section id="about" class="page panel narrow">
+      <p class="eyebrow">TENTANG MEDIA</p><h1>DONATIK 🍩</h1>
+      <p>DONATIK adalah game pembelajaran digital berbentuk simulasi manajemen waktu untuk membantu siswa memahami makna larik puisi.</p>
+      <ul><li>Jenis media: Game pembelajaran digital</li><li>Mata pelajaran: Bahasa Indonesia</li><li>Sasaran: Siswa kelas IX SMP</li><li>Materi: Memahami makna larik puisi</li></ul>
+      <button class="secondary" data-page="menu">← Kembali ke menu</button>
+    </section>
+  </main>
+  <footer>DONATIK • Belajar puisi sambil mengelola toko donat 🍩</footer>
+  <script src="game.js"></script>
+</body>
+</html>
